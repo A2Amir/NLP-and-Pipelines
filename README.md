@@ -40,3 +40,5 @@ In this step we will explore the steps involved in **text processing**, but befo
  6. Converting words into their dictionary forms, using **stemming and lemmatization**
 
 **After performing these steps above, your text will capture the essence of what was being conveyed in a form that is easier to work with.**
+
+
