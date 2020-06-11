@@ -42,3 +42,7 @@ In this step we will explore the steps involved in **text processing**, but befo
 **After performing these steps above, your text will capture the essence of what was being conveyed in a form that is easier to work with.**
 
 
+### 1. Cleaning: 
+
+In this section I am going to walk through the step of cleaning text data from a popular source - **the web**. You'll be introduced to helpful tools in working with this data, including the [requests library](http://docs.python-requests.org/en/master/user/quickstart/#make-a-request), [regular expressions](https://docs.python.org/3/library/re.html), and [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+
