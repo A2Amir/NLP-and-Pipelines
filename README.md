@@ -73,3 +73,18 @@ deal with and hence the complexity of later procedures.
 
 * Note that stop words are based on a specific corpus and different corpora may have different stop words. 
 * A word maybe a stop word in one application, but a useful word in another. 
+
+### 4. Part-of-Speech Tagging:
+
+Identifying how words are being used in a sentence as Nouns, pronouns, verbs, adverbs, etc..., can help us better understand what is being said. It can also point out relationships between words and recognize cross references. 
+
+<p align="center">
+  <img src="/imgs/2.PNG" alt="" width="500" height="200" >
+ </p>
+
+**Note:** Part-of-speech tagging using [the pos_tag function](https://www.nltk.org/book/ch05.html)  in the nltk library can be very tedious and error-prone for a large corpus of text, since you have to account for all possible sentence structures and tags!
+
+There are other more advanced forms of POS tagging that can learn sentence structures and tags from given data, including Hidden Markov Models (HMMs) and Recurrent Neural Networks (RNNs).
+
+
+### 4. Stop Word Removal: Named Entity Recognition
