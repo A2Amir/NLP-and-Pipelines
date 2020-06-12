@@ -57,3 +57,19 @@ a human reader, from the standpoint of a machine learning algorithm, it does not
 *  you may want to remove special characters like periods, question marks, and exclamation points from the text and only keep letters of the alphabet and maybe numbers. This is especially useful when we are looking at text documents as a whole in applications like document classification and clustering where the low level details do not matter a lot. 
 
 * Is it better to just replace punctuation characters with a space, because words don't get concatenated together, in case the original text did not have a space before or after the punctuation.
+
+
+
+### 3. Tokenization: 
+
+Token is a fancy term for a symbol. Usually, one that holds some meaning and is not typically split up any further. In case of natural language processing, our tokens are usually **individual words**. So tokenization is simply splitting each sentence into a sequence of words. Check out this [jupyter notebook]() and the [nltk.tokenize package](http://www.nltk.org/api/nltk.tokenize.html) for more details. 
+
+
+### 4. Stop Word Removal: 
+
+Stop words are uninformative words (like, is, our, the, in, at, etc...) that do not add a lot of meaning to a sentence.
+They are typically very commonly occurring words, and we may want to remove them to reduce the vocabulary we have to
+deal with and hence the complexity of later procedures. 
+
+* Note that stop words are based on a specific corpus and different corpora may have different stop words. 
+* A word maybe a stop word in one application, but a useful word in another. 
