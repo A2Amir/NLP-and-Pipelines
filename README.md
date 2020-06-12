@@ -46,6 +46,7 @@ In this step we will explore the steps involved in **text processing**, but befo
 
 In this section I am going to walk through the step of cleaning text data from a popular source - **the web**. You'll be introduced to helpful tools in working with this data, including the [requests library](http://docs.python-requests.org/en/master/user/quickstart/#make-a-request), [regular expressions](https://docs.python.org/3/library/re.html), and [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/1_cleaning.ipynb) for more details about Cleaning. 
 
 ### 2. Normalization: 
 
@@ -58,11 +59,12 @@ a human reader, from the standpoint of a machine learning algorithm, it does not
 
 * Is it better to just replace punctuation characters with a space, because words don't get concatenated together, in case the original text did not have a space before or after the punctuation.
 
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/2_normalization.ipynb) for more details about Normalization. 
 
 
 ### 3. Tokenization: 
 
-Token is a fancy term for a symbol. Usually, one that holds some meaning and is not typically split up any further. In case of natural language processing, our tokens are usually **individual words**. So tokenization is simply splitting each sentence into a sequence of words. Check out this [jupyter notebook]() and the [nltk.tokenize package](http://www.nltk.org/api/nltk.tokenize.html) for more details. 
+Token is a fancy term for a symbol. Usually, one that holds some meaning and is not typically split up any further. In case of natural language processing, our tokens are usually **individual words**. So tokenization is simply splitting each sentence into a sequence of words. Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/3_tokenization.ipynb) and the [nltk.tokenize package](http://www.nltk.org/api/nltk.tokenize.html) for more details. 
 
 
 ### 4. Stop Word Removal: 
@@ -74,7 +76,9 @@ deal with and hence the complexity of later procedures.
 * Note that stop words are based on a specific corpus and different corpora may have different stop words. 
 * A word maybe a stop word in one application, but a useful word in another. 
 
-### 4. Part-of-Speech Tagging:
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/4_stop_words.ipynb) for more details about Stop Word Removal. 
+
+### 5. Part-of-Speech Tagging:
 
 Identifying how words are being used in a sentence as Nouns, pronouns, verbs, adverbs, etc..., can help us better understand what is being said. It can also point out relationships between words and recognize cross references. 
 
@@ -87,4 +91,8 @@ Identifying how words are being used in a sentence as Nouns, pronouns, verbs, ad
 There are other more advanced forms of POS tagging that can learn sentence structures and tags from given data, including Hidden Markov Models (HMMs) and Recurrent Neural Networks (RNNs).
 
 
-### 4. Stop Word Removal: Named Entity Recognition
+### 6. Named Entity Recognition: 
+ 
+Named entities are typically noun phrases that refer to some specific object, person, or place.  Named entity recognition is often used to index and search for news articles, for example, on companies of interest. Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/5_pos_ner.ipynb) for more details about Part-of-Speech Tagging and Named Entity Recognition. 
+
+### 7. Stemming and Lemmatization:
