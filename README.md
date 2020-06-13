@@ -96,3 +96,29 @@ There are other more advanced forms of POS tagging that can learn sentence struc
 Named entities are typically noun phrases that refer to some specific object, person, or place.  Named entity recognition is often used to index and search for news articles, for example, on companies of interest. Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/5_pos_ner.ipynb) for more details about Part-of-Speech Tagging and Named Entity Recognition. 
 
 ### 7. Stemming and Lemmatization:
+
+Stemming is the process of reducing a word to its stem or root form. For instance, branching, branched, branches, can all be reduced to branch. This helps reduce complexity while retaining the essence of meaning that is carried by words.  Stemming is meant to be a fast and crude operation carried out by applying very simple search and replace style rules.  This may result in stem words that are not complete words, but that's okay, as long as all forms of that word are reduced to the same stem. 
+
+
+
+Lemmatization is another technique used to reduce words to a normalized form., The transformation of lemmatization actually uses a dictionary to map different variants of a word back to its root.  With this approach, we are able to reduce non-trivial inflections such as is, was, were, back to the root 'be'.
+
+
+#### Differences
+
+ * Stemming sometimes results in stems that are not complete words in English. Lemmatization is similar to stemming with one difference, the final form is also a meaningful word.
+ 
+* Stemming does not need a dictionary like lemmatization does.
+
+* Depending on the constraints you have, stemming maybe a less memory intensive option for you to consider. 
+
+
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/5_stem_lemmatize.ipynb) for more details about Stemming and Lemmatization. 
+
+### summarize what a typical workflow looks like: 
+
+1. Starting with a plain text sentence, 
+2. Normalize it by converting to lowercase and removing punctuation, 
+3. Split it up into words using a tokenizer. 
+4. Remove stop words to reduce the vocabulary you have to deal with. 
+5. Depending on your application, you may then choose to apply a combination of stemming and lemmatization to reduce words to the root or stem form. It is common to apply both, lemmatization first, and then stemming. 
