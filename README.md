@@ -157,7 +157,7 @@ The Bag of Words model treats each document as an un-ordered collection of words
 
 After producing set of words from documents, keeping these as separate sets  is very inefficient. They're of different sizes, contain different words,  hard to compare and words occur multiple times in each document.
 
-A better representation is creating a set of documents , which is known as a corpus and turning each document of the corpus into a vector of numbers representing how many times each unique word in the corpus occurs in a document.  
+A better representation is creating a set of documents , which is known as a corpus and turning each document of the corpus into a vector of numbers representing how many times **each unique word** in the corpus occurs in a document.  
 
 <p align="center">
   <img src="/imgs/6.PNG" alt="" width="500" height="350" >
@@ -177,4 +177,18 @@ what you can do with this representation is to compare two documents based on ho
   <img src="/imgs/8.PNG" alt="" width="400" height="250" >
  </p>
 
-   If you think of these vectors as arrows in some n-dimensional space, then this is equal to the cosine of the angle theta between them. Identical vectors have cosine equals one. Orthogonal vectors have cosine equal zero and for vectors that are exactly opposite, it is minus one. So, the values always range nicely between one for most similar, to minus one, most dissimilar.
+   If you think of these vectors as arrows in some n-dimensional space, then this is equal to the cosine of the angle theta between them. Identical vectors have cosine equals one. Orthogonal vectors have cosine equal zero and for vectors that are exactly opposite, it is minus one. **The values always range between one for most similar, to minus one, most dissimilar**.
+
+### 2. TF-IDF:
+One limitation of the bag of words approach is that it treats every word as being equally important. Whereas intuitively, we know that some words occur frequently within a corpus. For example, when looking at financial documents, cost or price maybe a pretty common term. 
+
+ We can compensate for this by counting the number of documents in which each word occurs. This can be called **document frequency and then dividing the term frequencies by the document frequency of that term.  This gives us a metric that is proportional to the ***frequency of occurrence of a term in a document***  but ***inversely proportional to the number of documents it appears in***.**
+
+<p align="center">
+  <img src="/imgs/9.PNG" alt="" width="400" height="250" >
+ </p>
+
+It highlights the words that are more unique to a document and thus better for characterizing it (see below ). 
+<p align="center">
+  <img src="/imgs/1.gif" alt="" width="400" height="250" >
+ </p>
