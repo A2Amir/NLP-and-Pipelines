@@ -199,9 +199,9 @@ It highlights the words that are more unique to a document and thus better for c
   <img src="/imgs/10.PNG" alt="" width="400" height="150" >
  </p>
  
- * The most commonly used form of TF-IDF defines term frequency as the raw count of a term (T) in a document (D), divided by the total number of terms in D.
+ * The most commonly used form of TF-IDF defines term frequency as **the raw count of a term (T) in a document (D), divided by the total number of terms in D**.
  
- * Inverse document frequency as the logarithm of, the total number of documents in the collection D, divided by the number of documents where T is present. 
+ * Inverse document frequency as **the logarithm of, the total number of documents in the collection D, divided by the number of documents where T is present**. 
   
 
 Several variations exist, that try to normalize or smooth the resulting values or prevent edge cases such as divide by zero errors. Overall TF-IDF is an innovative approach to assigning weights to words, that signify their relevance in documents.
