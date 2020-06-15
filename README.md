@@ -160,24 +160,22 @@ After producing set of words from documents, keeping these as separate sets  is 
 A better representation is creating a set of documents , which is known as a corpus and turning each document of the corpus into a vector of numbers representing how many times each unique word in the corpus occurs in a document.  
 
 <p align="center">
-  <img src="/imgs/6.PNG" alt="" width="500" height="400" >
+  <img src="/imgs/6.PNG" alt="" width="500" height="350" >
  </p>
  
 what you can do with this representation is to compare two documents based on how many words they have in common or how similar their term frequencies are:
 
 * A more mathematical way of expressing that is to compute the dot product between the two row vectors, which is the sum of the products of corresponding elements. Greater the dot product,more similar the two vectors are.  
-
-
 <p align="center">
   <img src="/imgs/7.PNG" alt="" width="400" height="200" >
  </p>
-The dot product has one flaw, it only captures the portions of overlap.It is not affected by other values that are not uncommon. 
+   
+   * The dot product has one flaw, it only captures the portions of overlap.It is not affected by other values that are not uncommon. Documents that are very different can end up with the same product as ones that are identical. 
 
-* A better measure is cosine similarity,where we divide the dot product of two vectors by the product of their magnitudes or Euclidean norms. 
 
+ * A better measure is cosine similarity,where we divide the dot product of two vectors by the product of their magnitudes or Euclidean norms. 
 <p align="center">
-  <img src="/imgs/8.PNG" alt="" width="400" height="300" >
+  <img src="/imgs/8.PNG" alt="" width="400" height="250" >
  </p>
 
- If you think of these vectors as arrows in some n-dimensional space, then this is equal to the cosine of the angle theta between them.
-Identical vectors have cosine equals one. Orthogonal vectors have cosine equal zero and for vectors that are exactly opposite, it is minus one. So, the values always range nicely between one for most similar, to minus one, most dissimilar.
+*  If you think of these vectors as arrows in some n-dimensional space, then this is equal to the cosine of the angle theta between them. Identical vectors have cosine equals one. Orthogonal vectors have cosine equal zero and for vectors that are exactly opposite, it is minus one. So, the values always range nicely between one for most similar, to minus one, most dissimilar.
