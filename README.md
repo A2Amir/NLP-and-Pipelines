@@ -148,6 +148,7 @@ The question is,how do we come up with a representation for text data that we ca
 ### 1. Bag of Words:
 
 The Bag of Words model treats each document as an un-ordered collection of words. Here, a document is the unit of text that you want to analyze. For instance each essay or tweet, would be a document. To obtain a bag of words from a piece of raw text,you need to apply appropriate text processing steps (explained above) then treat the resulting tokens as an un-ordered collection.
+
 <p align="center">
   <img src="/imgs/5.PNG" alt="" width="400" height="300" >
  </p>
@@ -159,7 +160,7 @@ After producing set of words from documents, keeping these as separate sets  is 
 A better representation is creating a set of documents , which is known as a corpus and turning each document of the corpus into a vector of numbers representing how many times each unique word in the corpus occurs in a document.  
 
 <p align="center">
-  <img src="/imgs/6.PNG" alt="" width="400" height="300" >
+  <img src="/imgs/6.PNG" alt="" width="500" height="400" >
  </p>
  
 what you can do with this representation is to compare two documents based on how many words they have in common or how similar their term frequencies are:
@@ -168,14 +169,14 @@ what you can do with this representation is to compare two documents based on ho
 
 
 <p align="center">
-  <img src="/imgs/7.PNG" alt="" width="400" height="300" >
+  <img src="/imgs/7.PNG" alt="" width="400" height="200" >
  </p>
 The dot product has one flaw, it only captures the portions of overlap.It is not affected by other values that are not uncommon. 
 
 * A better measure is cosine similarity,where we divide the dot product of two vectors by the product of their magnitudes or Euclidean norms. 
 
 <p align="center">
-  <img src="/imgs/7.PNG" alt="" width="400" height="300" >
+  <img src="/imgs/8.PNG" alt="" width="400" height="300" >
  </p>
 
  If you think of these vectors as arrows in some n-dimensional space, then this is equal to the cosine of the angle theta between them.
