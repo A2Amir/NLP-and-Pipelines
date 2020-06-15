@@ -196,8 +196,9 @@ It highlights the words that are more unique to a document and thus better for c
  TF-IDF is simply the product of two weights, a term frequency, and an inverse document frequency. 
  
   <p align="center">
-  <img src="/imgs/10.PNG" alt="" width="400" height="250" >
+  <img src="/imgs/10.PNG" alt="" width="400" height="150" >
  </p>
+ 
  * The most commonly used form of TF-IDF defines term frequency as the raw count of a term (T) in a document (D), divided by the total number of terms in D.
  
  * Inverse document frequency as the logarithm of, the total number of documents in the collection D, divided by the number of documents where T is present. 
