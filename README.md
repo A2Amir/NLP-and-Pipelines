@@ -129,7 +129,7 @@ Words comprise of charachters which are just sequences of ASCII or Unicode value
   <img src="/imgs/3.PNG" alt="" width="400" height="300" >
  </p>
 
-the question is,how do we come up with a representation for text data that we can use as features for modeling?  The answer depends on what kind of model you're using and what task you're trying to accomplish. 
+The question is,how do we come up with a representation for text data that we can use as features for modeling?  The answer depends on what kind of model you're using and what task you're trying to accomplish. 
 
 
 * If you want to use a graph based model to extract insights, you may want to represent your words as symbolic nodes with relationships between them like WordNet. 
@@ -139,7 +139,7 @@ the question is,how do we come up with a representation for text data that we ca
 
 * If you want to work with individual words and phrases such as for text generation or machine translation, you'll need a word level representation such as word2vec or glove. 
 <p align="center">
-  <img src="/imgs/4.PNG" alt="" width="400" height="300" >
+  <img src="/imgs/4.PNG" alt="" width="600" height="400" >
  </p>
 
 
