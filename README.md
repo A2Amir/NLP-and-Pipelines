@@ -113,7 +113,7 @@ Lemmatization is another technique used to reduce words to a normalized form., T
 * Depending on the constraints you have, stemming maybe a less memory intensive option for you to consider. 
 
 
-Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/5_stem_lemmatize.ipynb) for more details about Stemming and Lemmatization. 
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/6_stem_lemmatize.ipynb) for more details about Stemming and Lemmatization. 
 
 ### summarize what a typical workflow looks like: 
 
@@ -122,3 +122,25 @@ Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/bl
 3. Split it up into words using a tokenizer. 
 4. Remove stop words to reduce the vocabulary you have to deal with. 
 5. Depending on your application, you may then choose to apply a combination of stemming and lemmatization to reduce words to the root or stem form. It is common to apply both, lemmatization first, and then stemming. 
+
+## Stage 2: Feature Extraction
+Words comprise of charachters which are just sequences of ASCII or Unicode values and computers don't have a standard representation for words. Computer don't quite capture the meanings or relationships between words. 
+<p align="center">
+  <img src="/imgs/3.PNG" alt="" width="400" height="300" >
+ </p>
+
+The question is,how do we come up with a representation for text data that we can use as features for modeling?  The answer depends on what kind of model you're using and what task you're trying to accomplish. 
+
+
+* If you want to use a graph based model to extract insights, you may want to represent your words as symbolic nodes with relationships between them like WordNet. 
+
+
+* If you're trying to perform a document level task, such as spam detection or sentiment analysis,you may want to use a per document representations such as bag-of-words or doc2vec. 
+
+* If you want to work with individual words and phrases such as for text generation or machine translation, you'll need a word level representation such as word2vec or glove. 
+<p align="center">
+  <img src="/imgs/4.PNG" alt="" width="600" height="400" >
+ </p>
+
+
+* There are many ways of representing textual information and it is only through practice that you can learn what you need for each problem. 
