@@ -169,8 +169,7 @@ what you can do with this representation is to compare two documents based on ho
 <p align="center">
   <img src="/imgs/7.PNG" alt="" width="400" height="200" >
  </p>
-   
-   * The dot product has one flaw, it only captures the portions of overlap.It is not affected by other values that are not uncommon. Documents that are very different can end up with the same product as ones that are identical. 
+   The dot product has one flaw, it only captures the portions of overlap.It is not affected by other values that are not uncommon. Documents that are very different can end up with the same product as ones that are identical. 
 
 
  * A better measure is cosine similarity,where we divide the dot product of two vectors by the product of their magnitudes or Euclidean norms. 
@@ -178,4 +177,4 @@ what you can do with this representation is to compare two documents based on ho
   <img src="/imgs/8.PNG" alt="" width="400" height="250" >
  </p>
 
-*  If you think of these vectors as arrows in some n-dimensional space, then this is equal to the cosine of the angle theta between them. Identical vectors have cosine equals one. Orthogonal vectors have cosine equal zero and for vectors that are exactly opposite, it is minus one. So, the values always range nicely between one for most similar, to minus one, most dissimilar.
+   If you think of these vectors as arrows in some n-dimensional space, then this is equal to the cosine of the angle theta between them. Identical vectors have cosine equals one. Orthogonal vectors have cosine equal zero and for vectors that are exactly opposite, it is minus one. So, the values always range nicely between one for most similar, to minus one, most dissimilar.
