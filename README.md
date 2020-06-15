@@ -113,7 +113,7 @@ Lemmatization is another technique used to reduce words to a normalized form., T
 * Depending on the constraints you have, stemming maybe a less memory intensive option for you to consider. 
 
 
-Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/5_stem_lemmatize.ipynb) for more details about Stemming and Lemmatization. 
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/6_stem_lemmatize.ipynb) for more details about Stemming and Lemmatization. 
 
 ### summarize what a typical workflow looks like: 
 
