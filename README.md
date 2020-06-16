@@ -206,4 +206,17 @@ It highlights the words that are more unique to a document and thus better for c
 
 Several variations exist, that try to normalize or smooth the resulting values or prevent edge cases such as divide by zero errors. Overall TF-IDF is an innovative approach to assigning weights to words, that signify their relevance in documents.
 
-TF-IDF can be used for classification task, distinguishing spam messages, from normal messages.
+**The bag of words and TF-IDF representations can characterize an entire document or collection of words as one unit. As a result, the inferences we can make are typically at a document level, for example,  mixture of topics in the document, documents similarity, documents sentiment.**
+
+
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/7_bow_tfidf.ipynb) for more details about bag of words and TF-IDF representations. 
+
+### 2. One-Hot Encoding:
+
+ For a deeper analysis of text, we need to come up with a numerical representation for each word. If you've dealt with categorical variables for data analysis or tried to perform multi-class classification, you may have come across this term, One-Hot Encoding.
+That is one way of representing words, treat each word like a class, assign it a vector that has one in a single pre-determined position for that word and zero everywhere else. 
+
+ 
+  <p align="center">
+  <img src="/imgs/11.PNG" alt="" width="400" height="150" >
+ </p>
