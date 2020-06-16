@@ -211,12 +211,29 @@ Several variations exist, that try to normalize or smooth the resulting values o
 
 Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/7_bow_tfidf.ipynb) for more details about bag of words and TF-IDF representations. 
 
-### 2. One-Hot Encoding:
+### 3. One-Hot Encoding:
 
  For a deeper analysis of text, we need to come up with a numerical representation for each word. If you've dealt with categorical variables for data analysis or tried to perform multi-class classification, you may have come across this term, One-Hot Encoding.
 That is one way of representing words, treat each word like a class, assign it a vector that has one in a single pre-determined position for that word and zero everywhere else. 
 
  
   <p align="center">
-  <img src="/imgs/11.PNG" alt="" width="400" height="150" >
+  <img src="/imgs/11.PNG" alt="" width="400" height="300" >
  </p>
+
+### 4. Word Embeddings:
+
+ One-hot encoding usually works in some situations but breaks down when we have a large vocabulary to deal with,  because the size of our ward representation grows with the number of words. What we need as a way to control the size of our word representation by limiting it to a fixed-size vector. 
+ 
+ In other words, we want to find an embedding for each word in some vector space and we wanted to exhibit some desired properties. For example, 
+ * If two words are similar in meaning, they should be closer to each other compared to words that are not.
+ * If two pairs of words have a similar difference in their meanings,they should be approximately equally separated in the embedded space. 
+ 
+  
+  <p align="center">
+  <img src="/imgs/2.gif" alt="" width="400" height="250" >
+ </p>
+  We could use such a representation for a variety of purposes like finding synonyms and analogies, identifying concepts around which words are clustered, classifying words as positive, negative, neutral, or by combining word vectors, we can come up with another way of representing documents as well. 
+  
+  
+Check out these repos [Natural Language Processing with Deep Learning](https://github.com/A2Amir/Natural-Language-Processing-with-Deep-Learning), [Sentiment Analysi](https://github.com/A2Amir/Sentiment-Analysis), [Word_Analogy using embeddings](https://github.com/A2Amir/Word_analogy-using-embeddings) for more details. 
