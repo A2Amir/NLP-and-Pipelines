@@ -241,27 +241,25 @@ Check out these repos [Natural Language Processing with Deep Learning](https://g
 
 ### 4.  Word2Vec:
 
-Word2Vec is perhaps one of the most popular examples of word embeddings used in practice.As the name Word2Vec indicates,
-it transforms words to vectors. But what the name doesn't give away is how that transformation is performed.
-The core idea behind Word2Vec is this, a model that is able to predict a word for given neighboring words , or vice versa, predict neighboring words for a given word is likely to capture the contextual meanings of words very well.
+Word2Vec is perhaps one of the most popular examples of word embeddings used in practice. As the name Word2Vec indicates, it transforms words to vectors. But what the name doesn't give away is how that transformation is performed. The core idea behind Word2Vec is this, a model that is able to predict a word for given neighboring words , or vice versa, predict neighboring words for a given word is likely to capture the contextual meanings of words very well.
 
 <p align="center">
-  <img src="/imgs/12.PNG" alt="" width="400" height="100" >
+  <img src="/imgs/12.PNG" alt="" width="400" height="150" >
  </p>
 
 
 Predicting neighboring words and word are two flavors of Word2Vec models, **one where you are given neighboring words called continuous bag of words**, and **the other where you are given the middle word called Skip-gram**.
 
-In the Skip-gram model, you pick any word from a sentence, convert it into a one-hot encoded vector and feed it into a neural network or some other probabilistic model that is designed to predict a few surrounding words, using a suitable loss function, optimize the weights or parameters of the model and repeat this till it learns to predict surrounding words as best as it can. Now, take an intermediate representation like a hidden layer in a neural network. The outputs of that layer for a given word become the corresponding word vector.
+In the Skip-gram model, you pick any word from a sentence, convert it into a one-hot encoded vector and feed it into a neural network or some other probabilistic model that is designed to predict a few surrounding words, using a suitable loss function, optimize the weights or parameters of the model and repeat this till it learns to predict surrounding words as best as it can. Now, take an intermediate representation like a hidden layer in a neural network. The outputs of that layer for a given word become the corresponding **word vector**.
 
 <p align="center">
-  <img src="/imgs/13.PNG" alt="" width="300" height="200" >
+  <img src="/imgs/13.PNG" alt="" width="400" height="250" >
  </p>
 
 
-The Continuous Bag of Words variation also uses a similar strategy. This yields a very robust representation of words
-because the meaning of each word is distributed throughout the vector. The size of the word vector is up to you,how you want to tune performance versus complexity.
+The Continuous Bag of Words variation uses a similar strategy. This yields a very robust representation of words
+because the meaning of each word is distributed throughout the vector. The size of the word vector is up to you, how you want to tune performance versus complexity.
 
 It remains constant no matter how many words you train on, unlike Bag of Words, for instance, where the size grows with the number of unique words. And once you pre-train a large set of word vectors, you can use them efficiently without having to transform again and again, just store them in a lookup table.
 
-Finally, it is ready to be used in deep learning architectures.For example, it can be used as the input vector for recurrent neural nets. It is also possible to use RNNs and LSTm to learn even better word embeddings. 
+Finally, it is ready to be used in deep learning architectures. For example, it can be used as the input vector for recurrent neural nets. It is also possible to use RNNs and LSTMs to learn even better word embeddings. 
