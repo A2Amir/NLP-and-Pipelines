@@ -239,7 +239,7 @@ That is one way of representing words, treat each word like a class, assign it a
 Check out these repos [Natural Language Processing with Deep Learning](https://github.com/A2Amir/Natural-Language-Processing-with-Deep-Learning), [Sentiment Analysi](https://github.com/A2Amir/Sentiment-Analysis), [Word_Analogy using embeddings](https://github.com/A2Amir/Word_analogy-using-embeddings) for more details. 
 
 
-### 4.  Word2Vec:
+### 5.  Word2Vec:
 
 Word2Vec is perhaps one of the most popular examples of word embeddings used in practice. As the name Word2Vec indicates, it transforms words to vectors. But what the name doesn't give away is how that transformation is performed. The core idea behind Word2Vec is this, a model that is able to predict a word for given neighboring words , or vice versa, predict neighboring words for a given word is likely to capture the contextual meanings of words very well.
 
@@ -263,3 +263,17 @@ because the meaning of each word is distributed throughout the vector. The size 
 It remains constant no matter how many words you train on, unlike Bag of Words, for instance, where the size grows with the number of unique words. And once you pre-train a large set of word vectors, you can use them efficiently without having to transform again and again, just store them in a lookup table.
 
 Finally, it is ready to be used in deep learning architectures. For example, it can be used as the input vector for recurrent neural nets. It is also possible to use RNNs and LSTMs to learn even better word embeddings. 
+
+
+### 6. t-SNE:
+ 
+Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for t-Distributed Stochastic Neighbor Embedding, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
+
+When performing the transformation,it tries to maintain relative distances between objects, so that similar ones stay closer together while dissimilar objects stay further apart. 
+ 
+ <p align="center">
+  <img src="/imgs/3.gif" alt="" width="500" height="300" >
+ </p>
+
+T-SNE also works on other kinds of data, such as images. This is a very useful tool for better understanding the representation that
+a network learns and for identifying any bugs or other issues. 
