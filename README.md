@@ -247,24 +247,22 @@ That is one way of representing words, treat each word like a class, assign it a
     <p align="center">
      <img src="/imgs/13.PNG" alt="" width="400" height="250" >
     </p>
-    The Continuous Bag of Words variation uses a similar strategy. This yields a very robust representation of words
-   because the meaning of each word is distributed throughout the vector. The size of the word vector is up to you, how you want to tune performance versus complexity.
-   
-   It remains constant no matter how many words you train on, unlike Bag of Words, for instance, where the size grows with the number of unique words. And once you pre-train a large set of word vectors, you can use them efficiently without having to transform again and again, just store them in a lookup table.
-   
-   Finally, it is ready to be used in deep learning architectures. For example, it can be used as the input vector for recurrent neural nets. It is also possible to use RNNs and LSTMs to learn even better word embeddings. 
-   
-   Check out these repos [Natural Language Processing with Deep Learning](https://github.com/A2Amir/Natural-Language-Processing-with-Deep-Learning), [Sentiment Analysi](https://github.com/A2Amir/Sentiment-Analysis), [Word_Analogy using embeddings](https://github.com/A2Amir/Word_analogy-using-embeddings) for more details. 
+    The Continuous Bag of Words variation uses a similar strategy. This yields a very robust representation of words because the meaning of each word is distributed throughout the vector. The size of the word vector is up to you, how you want to tune performance versus complexity.
+    
+    It remains constant no matter how many words you train on, unlike Bag of Words, for instance, where the size grows with the number of unique words. And once you pre-train a large set of word vectors, you can use them efficiently without having to transform again and again, just store them in a lookup table.
+    
+    Finally, it is ready to be used in deep learning architectures. For example, it can be used as the input vector for recurrent neural nets. It is also possible to use RNNs and LSTMs to learn even better word embeddings. 
+    
+    Check out these repos [Natural Language Processing with Deep Learning](https://github.com/A2Amir/Natural-Language-Processing-with-Deep-Learning), [Sentiment Analysi](https://github.com/A2Amir/Sentiment-Analysis), [Word_Analogy using embeddings](https://github.com/A2Amir/Word_analogy-using-embeddings) for more details. 
 
   * 4.3  t-SNE:
   
-  Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for **t-Distributed Stochastic Neighbor Embedding**, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
+    Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for **t-Distributed Stochastic Neighbor Embedding**, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
   
-  When performing the transformation,it tries to maintain relative distances between objects, so that similar ones stay closer together while dissimilar objects stay further apart. 
-  
-  <p align="center">
+    When performing the transformation,it tries to maintain relative distances between objects, so that similar ones stay closer together while dissimilar objects stay further apart.
+    <p align="center">
      <img src="/imgs/3.gif" alt="" width="500" height="300" >
-  </p>
-  
-  T-SNE also works on other kinds of data, such as images. This is a very useful tool for better understanding the representation that a network learns and for identifying any bugs or other issues. 
+    </p>
+    
+    T-SNE also works on other kinds of data, such as images. This is a very useful tool for better understanding the representation that a network learns and for identifying any bugs or other issues. 
 
