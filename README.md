@@ -121,7 +121,7 @@ Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/bl
 2. Normalize it by converting to lowercase and removing punctuation, 
 3. Split it up into words using a tokenizer. 
 4. Remove stop words to reduce the vocabulary you have to deal with. 
-5. Depending on your application, you may then choose to apply a combination of stemming and lemmatization to reduce words to the root or stem form. It is common to apply both, lemmatization first, and then stemming. 
+5. Depending on your application, you may then choose to apply a combination of stemming and lemmatization to reduce words to the root or stem form. **It is common to apply both, lemmatization first, and then stemming**. 
 
 ## Stage 2: Feature Extraction
 Words comprise of charachters which are just sequences of ASCII or Unicode values and computers don't have a standard representation for words. Computer don't quite capture the meanings or relationships between words. 
@@ -301,3 +301,8 @@ That is one way of representing words, treat each word like a class, assign it a
     
     T-SNE also works on other kinds of data, such as images. This is a very useful tool for better understanding the representation that a network learns and for identifying any bugs or other issues. 
 
+## Stage 3: Modeling
+
+The final stage of the NLP pipeline is **modeling**, which includes designing a statistical or machine learning model, fitting its parameters to training data, using an optimization procedure, and then using it to make predictions about unseen data.
+
+The nice thing about working with numerical features is that it allows you to choose from all machine learning models  including support vector machine (SVM) or even a combination of them.
