@@ -305,4 +305,4 @@ That is one way of representing words, treat each word like a class, assign it a
 
 The final stage of the NLP pipeline is **modeling**, which includes designing a statistical or machine learning model, fitting its parameters to training data, using an optimization procedure, and then using it to make predictions about unseen data.
 
-The nice thing about working with numerical features is that it allows you to choose from all machine learning models  including support vector machine (SVM) or even a combination of them.
+The nice thing about working with numerical features is that it allows you to choose from all machine learning models including support vector machine (SVMs), Decision Trees, Neural Networks or even a combination of them.
