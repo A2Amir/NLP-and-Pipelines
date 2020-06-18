@@ -259,7 +259,7 @@ That is one way of representing words, treat each word like a class, assign it a
     
     Check out these repos [Natural Language Processing with Deep Learning](https://github.com/A2Amir/Natural-Language-Processing-with-Deep-Learning), [Sentiment Analysi](https://github.com/A2Amir/Sentiment-Analysis), [Word_Analogy using embeddings](https://github.com/A2Amir/Word_analogy-using-embeddings) for more details. 
  
-  * **4.1  GloVe:**
+  * **4.2  GloVe:**
     
     Word2Vec is just one type of word embedding. Recently, several other related approaches have been proposed that are really promising. **GloVe or global vectors for word representation** is one such approach that tries to directly optimize the vector representation of each word just using **co- occurrence statistics**.
     
@@ -272,31 +272,24 @@ That is one way of representing words, treat each word like a class, assign it a
     3. Now, for any pair of words, ij, we want the dot product of their word vectors, w_i times w_j, to be equal to their co-occurrence probability. Using this as our goal and a suitable lost function, we can iteratively optimize these word vectors. The result should be a set of vectors that capture the similarities and differences between individual words.
     
     This is the basic idea behind GloVe:
-  
-   <p align="center">
+    
+    <p align="center">
      <img src="/imgs/4.gif" alt="" width="500" height="300" >
-   </p>
+    </p>
+    
+    **Why co-occurrence probabilities?**
+    
+     Consider two context words (ice and steam) and two target words (solid and water). we would expect:  Solid would come across more often in the context of ice than steam and Water could occur in either context(ice and steam) with roughly equal probability.That's exactly what co-occurrence probabilities reflect. 
+     
+     <p align="center">
+     <img src="/imgs/14.PNG" alt="" width="400" height="300" >
+     </p>
+     
+     Given a large corpus, you'll find that the ratio of P(solid|ice) to P(solid|steam) is much greater than one, while the ratio of P(water|ice) and P(water|steam) is close to one.  we see that co-occurrence probabilities already exhibit some of the properties we want to capture.
+     
+     Note that the co-occurence probability matrix is huge and at the same time,co-occurrence probability values are typically very low, so it makes sense to work with the log of these values. 
 
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   
   * **4.3  t-SNE:**
   
     Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for **t-Distributed Stochastic Neighbor Embedding**, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
