@@ -258,7 +258,45 @@ That is one way of representing words, treat each word like a class, assign it a
     Finally, it is ready to be used in deep learning architectures. For example, it can be used as the input vector for recurrent neural nets. It is also possible to use RNNs and LSTMs to learn even better word embeddings. 
     
     Check out these repos [Natural Language Processing with Deep Learning](https://github.com/A2Amir/Natural-Language-Processing-with-Deep-Learning), [Sentiment Analysi](https://github.com/A2Amir/Sentiment-Analysis), [Word_Analogy using embeddings](https://github.com/A2Amir/Word_analogy-using-embeddings) for more details. 
+ 
+  * **4.1  GloVe:**
+    
+    Word2Vec is just one type of word embedding. Recently, several other related approaches have been proposed that are really promising. **GloVe or global vectors for word representation** is one such approach that tries to directly optimize the vector representation of each word just using **co- occurrence statistics**.
+    
+    Unlike word2vec which sets up an ancillary prediction task, GloVe uses the steps explained below to get the vector representation of each word:
+    
+    1. First compute the probably that word j appears in the context of word i, for all word pairs ij in a given corpus. What do I mean by j appears in context of i? Simply that word j is present in the vicinity of word i (either right next to it or a few words away), We count all such occurrences of i and j in our text collection and then normalize account to get a probability.
+    
+    2. Then, two vectors is initialized for each word, one for the word when it is acting as a context and one when it is acting as the target.
+    
+    3. Now, for any pair of words, ij, we want the dot product of their word vectors, w_i times w_j, to be equal to their co-occurrence probability. Using this as our goal and a suitable lost function, we can iteratively optimize these word vectors. The result should be a set of vectors that capture the similarities and differences between individual words.
+    
+    This is the basic idea behind GloVe:
+  
+   <p align="center">
+     <img src="/imgs/4.gif" alt="" width="500" height="300" >
+   </p>
 
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   * **4.3  t-SNE:**
   
     Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for **t-Distributed Stochastic Neighbor Embedding**, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
