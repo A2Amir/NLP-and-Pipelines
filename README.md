@@ -123,6 +123,7 @@ Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/bl
 4. Remove stop words to reduce the vocabulary you have to deal with. 
 5. Depending on your application, you may then choose to apply a combination of stemming and lemmatization to reduce words to the root or stem form. **It is common to apply both, lemmatization first, and then stemming**. 
 
+
 ## Stage 2: Feature Extraction
 Words comprise of charachters which are just sequences of ASCII or Unicode values and computers don't have a standard representation for words. Computer don't quite capture the meanings or relationships between words. 
 <p align="center">
