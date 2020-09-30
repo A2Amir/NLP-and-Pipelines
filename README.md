@@ -191,7 +191,7 @@ One limitation of the bag of words approach is that it treats every word as bein
 
 It highlights the words that are more unique to a document and thus better for characterizing it (see below ). 
 <p align="center">
-  <img src="/imgs/1.gif" alt="" width="400" height="250" >
+  <img src="/imgs/20.gif" alt="" width="400" height="250" >
  </p>
  
  **TF-IDF is simply the product of two weights, a term frequency, and an inverse document frequency.** 
