@@ -290,9 +290,9 @@ That is one way of representing words, treat each word like a class, assign it a
      Note that the co-occurence probability matrix is huge and at the same time,co-occurrence probability values are typically very low, so it makes sense to work with the log of these values. 
 
    
-  * **4.3  t-SNE:**
+  * **4.3  T-SNE:**
   
-    Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for **t-Distributed Stochastic Neighbor Embedding**, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
+    Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for **T-Distributed Stochastic Neighbor Embedding**, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
   
     When performing the transformation,it tries to maintain relative distances between objects, so that similar ones stay closer together while dissimilar objects stay further apart.
     <p align="center">
@@ -301,7 +301,12 @@ That is one way of representing words, treat each word like a class, assign it a
     
     T-SNE also works on other kinds of data, such as images. This is a very useful tool for better understanding the representation that a network learns and for identifying any bugs or other issues. 
 
-Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/8_Tensorflow_Word2Vec.ipynb) for **training an embedding layer and using the TensorBoard Embedding Projector** to graphically represent the weights of high dimensional embeddings layers. This can be helpful in visualizing, examining, and understanding your embedding layers.
+Check out this [jupyter notebook](https://github.com/A2Amir/NLP-and-Pipelines/blob/master/codes/8_Tensorflow_Word2Vec.ipynb) for **training an embedding layer and using the TensorBoard Embedding Projector** to graphically represent the weights of high dimensional embeddings layers using **the T-SNE and PCA methods (See Gif below)**. This can be helpful in visualizing, examining, and understanding your embedding layers.
+
+<p align="center">
+  <img src="/imgs/1.gif" alt="" width="800" height="400" >
+ </p>
+ 
 
 Check out these repos [Natural Language Processing with Deep Learning](https://github.com/A2Amir/Natural-Language-Processing-with-Deep-Learning), [Sentiment Analysi](https://github.com/A2Amir/Sentiment-Analysis), [Word_Analogy using embeddings](https://github.com/A2Amir/Word_analogy-using-embeddings) for more details. 
 ## Stage 3: Modeling
