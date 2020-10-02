@@ -290,7 +290,7 @@ That is one way of representing words, treat each word like a class, assign it a
      Note that the co-occurence probability matrix is huge and at the same time,co-occurrence probability values are typically very low, so it makes sense to work with the log of these values. 
 
    
-  * **4.3  T-SNE:**
+  * T-SNE:
   
     Word embeddings need to have high dimensionality in order to capture sufficient variations in natural language, which makes them super hard to visualize. T-SNE, which stands for **T-Distributed Stochastic Neighbor Embedding**, is a dimensionality reduction technique that can map high dimensional vectors to a lower dimensional space. It's kind of like PCA (Principle Component Analysis) but with one amazing property. 
   
